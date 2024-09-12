@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:islami_app/LayOut/LayOut_view.dart';
-import 'package:islami_app/core/settings_provider.dart';
+import 'package:islami_app/core/manager/settings_provider.dart';
 import 'package:provider/provider.dart';
 
 class SplashView extends StatefulWidget {

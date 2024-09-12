@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami_app/core/Application_Theme_Manager.dart';
-import 'package:islami_app/core/settings_provider.dart';
+import 'package:islami_app/core/theme/Application_Theme_Manager.dart';
+import 'package:islami_app/core/manager/settings_provider.dart';
 import 'package:islami_app/modules/quran/quran_view.dart';
 import 'package:provider/provider.dart';
 

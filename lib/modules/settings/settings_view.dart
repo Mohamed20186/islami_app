@@ -1,6 +1,6 @@
 import 'package:animated_custom_dropdown/custom_dropdown.dart';
 import 'package:flutter/material.dart';
-import 'package:islami_app/core/settings_provider.dart';
+import 'package:islami_app/core/manager/settings_provider.dart';
 import 'package:provider/provider.dart';
 
 class SettingsView extends StatefulWidget {
