@@ -6,9 +6,17 @@ import 'package:provider/provider.dart';
 class RadioProvider extends ChangeNotifier {
   List<RadioModel> radios = [];
   bool isLoading = true;
+  bool isError = false;
   Future<void> getRadios() async {
-    radios = await ApiManager.getRadio();
-    isLoading = false;
+    var result = await ApiManager.getRadio();
+    result.fold((l) {
+      isLoading = false;
+      isError = true;
+    }, (r) {
+      radios = r;
+      isLoading = false;
+    });
+
     notifyListeners();
   }
 }

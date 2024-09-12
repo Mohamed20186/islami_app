@@ -23,6 +23,14 @@ class RadioView extends StatelessWidget {
             ),
           );
         }
+        if (provider.isError) {
+          return Center(
+            child: Text(
+              'Error',
+              style: theme.textTheme.bodyMedium,
+            ),
+          );
+        }
         return Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
