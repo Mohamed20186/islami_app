@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/core/Application_Theme_Manager.dart';
+import 'package:islami_app/core/theme/Application_Theme_Manager.dart';
 
 class TasbehView extends StatefulWidget {
   const TasbehView({super.key});
