@@ -34,7 +34,7 @@ class _SettingsViewState extends State<SettingsView> {
             initialItem: provider.currentLanguageCode == 'eg'
                 ? languagesList[0]
                 : languagesList[1],
-            onChanged: (value) {
+            onChanged: (value) async {
               if (value == 'English') {
                 provider.changeLanguageCode(
                   newLanguageCode: 'en',
@@ -65,7 +65,7 @@ class _SettingsViewState extends State<SettingsView> {
             initialItem: provider.currentThemeMode == ThemeMode.dark
                 ? themeList[0]
                 : themeList[1],
-            onChanged: (value) {
+            onChanged: (value) async {
               if (value == 'dark') {
                 provider.changeThemeMode(newThemeMode: ThemeMode.dark);
               }

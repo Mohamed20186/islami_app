@@ -8,9 +8,12 @@ import 'package:provider/provider.dart';
 import 'modules/hadeth/hadeth_details_view.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  var provider = SettingsProvider();
+  await provider.loadSettings();
   runApp(ChangeNotifierProvider(
-    create: (context) => SettingsProvider(),
+    create: (context) => provider,
     child: const MyApp(),
   ));
 }
